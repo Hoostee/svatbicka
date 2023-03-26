@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="utf-8">
+    <title>Slavnostní zakončení linie rodu Kubátů</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap" rel="stylesheet"> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="entryPointContainer" class="row m-0 mb-4 mb-md-0 pb-2 pb-md-0" style="display: flex; justify-content: center; align-items: center; text-align: center; min-height: 100vh;">
+        <div class="container col-md-3 py-5">
+            <img src="img/ptak_vaclav_reversed.gif" width="300"/>
+        </div>
+        <div class="container col-md-6">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Gratulujeme!</h6>
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Byl jsi vybrán k vyplnění tohoto exkluzivního kvízu!</h6>
+            
+                <i class="fa-solid fa-circle-exclamation"></i>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
+                    <button id="enterQuestionerButton" style="background-color: #E47A2E; color: rgb(255, 255, 255); font-weight: bold; border: 2px solid #ffd9be; border-radius: 10px; width: 100px; height: 50px; margin-bottom: 50px;">Juchů!</button>
+                </div>
+            </div>
+        </div>
+        <div class="container col-md-3">
+            <img src="img/ptak_makrelicek.gif" width="300"/>
+        </div>
+    </div>
+
+    <div id="questionsContainer" style="display: flex; justify-content: center; align-items: center; text-align: center; min-height: 100vh;">
+        <div class="container py-5">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;" id="questionLabel"></h6>
+                <i class="far fa-circle-question text-dark"></i>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center justify-content-center" style="display: block" id="questionAnswers">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="resultContainer" style="display: flex; justify-content: center; align-items: center; text-align: center; min-height: 100vh;">
+        <div class="container py-5">
+            <img src="img/tanecek.gif" height="250px" style="margin-bottom: 35px;" />
+            <div class="position-relative text-center" style="margin-bottom: 35px;">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Počet správných odpovědí:</h6>
+                <h6 class="mb-3" style="letter-spacing: 3px;" id="resultLabel"></h6>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center" id="assessmentLabel" style="font-size: 12px;">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
+                    <p class="text-uppercase" style="font-size: 35px; color:#E47A2E; font-weight: bold; margin-bottom: 35px;">slavnostní zakončení linie rodiny Kubátů!</p>
+                    <button id="enterButton" style="background-color: #E47A2E; color: rgb(255, 255, 255); font-weight: bold; border: 2px solid #ffd9be; border-radius: 10px; width: 100px; height: 50px; ">Juchů!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="weddingInfoContainer">
+        <div class="container-fluid py-5" style="border-bottom: 1px solid rgb(229, 229, 229);">
+            <div class="container py-5">
+                <div class="section-title position-relative text-center">
+                    <h1 class="display-4">Kdy? V tuten den!</h1>
+                    <i class="far fa-clock-four text-dark"></i>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-6 text-center">
+                        <h2 class="font-weight-bold">19.8.2023</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container-fluid py-5" style="border-bottom: 1px solid rgb(229, 229, 229);">
+            <div class="container py-5">
+                <div class="section-title position-relative text-center">
+                    <h1 class="display-4">Kde? Tady!</h1>
+                    <i class="fa-solid fa-location-dot text-dark"></i>
+                </div>
+                <div class="row m-0 mb-4 mb-md-0 pb-2 pb-md-0">
+                    <div class="col-md-6 p-0 text-center text-md-right">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-5">
+                            <h3 class="mb-3">Obřad 14:00</h3>
+                            <p>Kostel sv. Mikuláše</p>
+                            <img src="img/sv_mikulas.jpg" style="object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-md-6 p-0" style="min-height: 400px;">
+                        <iframe style="border: 1px solid white;" src="https://en.frame.mapy.cz/s/herofarebu" width="100%" height="100%" frameborder="0"></iframe>
+                    </div>
+                </div>
+                <div class="row m-0 mb-4 mb-md-0 pb-2 pb-md-0">
+                    <div class="col-md-6 p-0 text-center text-md-right">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-5">
+                            <h3 class="mb-3">Párty 15:00 - ∞</h3>
+                            <p>Tábor Ranč Vránov</p>
+                            <p style="font-weight: bold; color:rgb(0, 0, 0);">Nocleh možný!</p>
+                            <img src="img/ranc_vranov.jpg" style="object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-md-6 p-0" style="min-height: 400px; ">
+                        <iframe style="border: 1px solid white;" src="https://en.frame.mapy.cz/s/gecagedoco" width="100%" height="100%" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid py-5" style="border-bottom: 1px solid rgb(229, 229, 229);">
+            <div class="container py-5">
+                <div class="section-title position-relative text-center">
+                    <h1 class="display-4">Dary?</h1>
+                    <i class="fa-regular fa-calendar-days text-dark"></i>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-6 text-center">
+                        <p>Ty přijdou do prasátka, které drží to prasátko!</p>
+                        <img src="img/prasata.jpg" width="150px" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid py-5" style="border-bottom: 1px solid rgb(229, 229, 229);">
+            <div class="container py-5">
+                <div class="section-title position-relative text-center">
+                    <h1 class="display-4">Jak potvrdit účast? Takhle!</h1>
+                    <i class="fa-regular fa-calendar-days text-dark"></i>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-6 text-center">
+                        Klikni na totoč a přidej se:
+                        <a href="https://www.facebook.com/groups/vaclavicekmakrelicek">
+                            <img src="img/fblogo.png" width="60px"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
